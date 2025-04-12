@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Main Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Manrope', sans-serif;
+            background: #C4A893;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 60px;
+            height: 120px;
+            background: #F2EFE8;
+            box-shadow: 0px 8px 10px rgba(9, 9, 55, 0.02);
+            border: 1px solid #948172;
+        }
+
+        .header img {
+            height: 80px;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 8px;
+        }
+
+        .navigation div {
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: #F5F5F5;
+        }
+        
+        .icons {
+            display: flex;
+            gap: 16px;
+        }
+
+        .icons div {
+            width: 50px;
+            height: 50px;
+            background: #F4F4FF;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #b6a293;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 180px auto 50px; /* Başlık için boşluk bırakıldı */
+            padding: 20px;
+            background: #F2EFE8;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 1px solid #948172;
+        }
+
+        h1 {
+            color: #473a30;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .actions a {
+            text-decoration: none;
+            color: white;
+            background: #EF6B4A;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .actions a:hover {
+            background: #D95C3A;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Chapter4 Bookstore">
+        <div class="navigation">
+            <div onclick="window.location.href='adminMainPage.html';">Home</div>
+            <div onclick="window.location.href='admin_about_us.php';">About Us</div>
+        </div>
+        <div class="icons"> 
+            <div onclick="document.location.pathname = 'helin.com/Chapter4/login-signup/login.php';">
+                <img src="exit.png" alt="Logout">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Admin Control Panel</h1>
+        <div class="actions">
+            <a href="book-actions/bookManagement.php">Book Management</a>
+            <a href="user-actions/userManagement.php">User Management</a>
+            <a href="order-actions/orderManagement.php">Order Management</a>
+        </div>
+    </div>
+</body>
+</html>
