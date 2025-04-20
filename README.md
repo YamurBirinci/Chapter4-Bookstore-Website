@@ -1,6 +1,7 @@
 # Project Overview
 
-This project aims to demonstrate the key features and functionality of our application. Below are some screenshots that illustrate the user interface and workflows.
+This project aims to demonstrate the basic features and functionality of our application. Our project briefly represents an online Bookshop application: It has both a user and an admin interface. Finally, the project uses FASTPANEL, PHP, HTML and CSS. 
+Below are some screenshots showing the user interface and workflows.
 
 ---
 
